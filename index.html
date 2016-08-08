@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Once and for(ce) all!</title>
+	<link rel="stylesheet" href="master.css">
+	<link href="https://fonts.googleapis.com/css?family=Atma:500,700" rel="stylesheet">
+	<link rel="stylesheet" href="https://npmcdn.com/flickity@2.0/dist/flickity.min.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="icon" href="sprites/r2d2_icon.png">
+</head>
+<body>
+
+	<div class="countdown">
+		<span class="seconds"></span>
+	</div>
+
+	<main>
+
+		<section class="hero">
+			<h1>Once and for(ce) all!</h1>
+		</section>
+
+		<div class="background-instructions">
+			<h2>Match up two competitors and choose a proposed circumstance.</h2>
+		</div>
+
+		<form action="" class="battleForm">
+			<div class="battleType">
+
+				<input type="radio" name="battleSelection" id="armWrestle" value="armWrestle" required class="battleTypeBG">
+				<label for="armWrestle" class="labelSelect">Arm Wrestle</label>
+
+				<input type="radio" name="battleSelection" id="debate" value="debate" class="battleTypeBG">
+				<label for="debate" class="labelSelect">Debate</label>
+
+				<input type="radio" name="battleSelection" id="footRace" value="footRace" class="battleTypeBG">
+				<label for="footRace" class="labelSelect">Foot Race</label>
+
+				<input type="radio" name="battleSelection" id="foodEating" value="foodEating" class="battleTypeBG">
+				<label for="foodEating" class="labelSelect">Food Eating Contest</label>
+			</div> <!-- battleType -->
+
+			<fieldset class="characterSelect">
+				<h2>Player 1:</h2>
+				<div class="characterOne carousel" data-flickity='{ "wrapAround": true }'>
+					<div class="carousel-cell" data-character="Yoda">
+						<img src="sprites/yoda.png" alt="8Bit Yoda">
+					</div>
+					<div class="carousel-cell" data-character="Lando">
+						<img src="sprites/lando.png" alt="8Bit Lando">
+					</div>
+					<div class="carousel-cell" data-character="Leia">
+						<img src="sprites/leia.png" alt="8Bit Leia">
+					</div>
+					<div class="carousel-cell" data-character="Obiwan">
+						<img src="sprites/obiwan.png" alt="8Bit Obiwan">
+					</div>
+					<div class="carousel-cell" data-character="Luke">
+						<img src="sprites/luke.png" alt="8Bit Luke">
+					</div>
+					<div class="carousel-cell" data-character="Chewbacca">
+						<img src="sprites/chewbacca.png" alt="8Bit Chewbacca">
+					</div>
+					<div class="carousel-cell" data-character="Hansolo">
+						<img src="sprites/hansolo.png" alt="8Bit Han Solo">
+					</div>
+					<div class="carousel-cell" data-character="Palpatine">
+						<img src="sprites/palpatine.png" alt="8Bit Palpatine">
+					</div>
+					<div class="carousel-cell" data-character="Jawa">
+						<img src="sprites/jawa.png" alt="8Bit Jawa">
+					</div>
+					<div class="carousel-cell" data-character="Stormtrooper">
+						<img src="sprites/stormtrooper.png" alt="8Bit Stormtrooper">
+					</div>
+					<div class="carousel-cell" data-character="C3PO">
+						<img src="sprites/c3po.png" alt="8Bit C3PO">
+					</div>
+					<div class="carousel-cell" data-character="R2D2">
+						<img src="sprites/r2d2.png" alt="8Bit R2D2">
+					</div>
+					<div class="carousel-cell" data-character="Darthvader">
+						<img src="sprites/darthvader.png" alt="8Bit Darthvader">
+					</div>
+					<div class="carousel-cell" data-character="Tuskenraider">
+						<img src="sprites/tuskenraider.png" alt="8Bit Tuskenraider">
+					</div>
+				</div> <!-- characterOne -->
+				
+				<h2>Player 2:</h2>
+				<div class="characterTwo carousel" data-flickity='{ "wrapAround": true }'>
+					<div class="carousel-cell" data-character="Yoda">
+						<img src="sprites/yoda.png" alt="8Bit Yoda">
+					</div>
+					<div class="carousel-cell" data-character="Lando">
+						<img src="sprites/lando.png" alt="8Bit Lando">
+					</div>
+					<div class="carousel-cell" data-character="Leia">
+						<img src="sprites/leia.png" alt="8Bit Leia">
+					</div>
+					<div class="carousel-cell" data-character="Obiwan">
+						<img src="sprites/obiwan.png" alt="8Bit Obiwan">
+					</div>
+					<div class="carousel-cell" data-character="Luke">
+						<img src="sprites/luke.png" alt="8Bit Luke">
+					</div>
+					<div class="carousel-cell" data-character="Chewbacca">
+						<img src="sprites/chewbacca.png" alt="8Bit Chewbacca">
+					</div>
+					<div class="carousel-cell" data-character="Hansolo">
+						<img src="sprites/hansolo.png" alt="8Bit Han Solo">
+					</div>
+					<div class="carousel-cell" data-character="Palpatine">
+						<img src="sprites/palpatine.png" alt="8Bit Palpatine">
+					</div>
+					<div class="carousel-cell" data-character="Jawa">
+						<img src="sprites/jawa.png" alt="8Bit Jawa">
+					</div>
+					<div class="carousel-cell" data-character="Stormtrooper">
+						<img src="sprites/stormtrooper.png" alt="8Bit Stormtrooper">
+					</div>
+					<div class="carousel-cell" data-character="C3PO">
+						<img src="sprites/c3po.png" alt="8Bit C3PO">
+					</div>
+					<div class="carousel-cell" data-character="R2D2">
+						<img src="sprites/r2d2.png" alt="8Bit R2D2">
+					</div>
+					<div class="carousel-cell" data-character="Darthvader">
+						<img src="sprites/darthvader.png" alt="8Bit Darthvader">
+					</div>
+					<div class="carousel-cell" data-character="Tuskenraider">
+						<img src="sprites/tuskenraider.png" alt="8Bit Tuskenraider">
+					</div>
+				</div> <!-- characterTwo -->
+				
+				<div class="submitContainer">
+					<!-- this onclick adds js in the html to go to the winner-->				
+					<input type="submit" value="BATTLE!" >
+				</div>
+			</fieldset>
+		</form>
+
+	</main>
+
+	<div class="winnnerVIEWPORT" id="goToWinner">
+		<!-- ID tag for link to go to -->
+		<div class="winner">
+				
+		</div>
+		<footer>
+			<p>Combatants have a 1 in 25 chance to be kissed by the force.<br>If <i class="fa fa-spinner fa-pulse fa-1x fa-fw faa-slow"></i> icon is displayed the combantant has recieved a force bonus.</p>
+		</footer>
+	</div>
+
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.js"></script>
+	<script src="https://use.fontawesome.com/aa68c7f2a7.js"></script>
+	<script src="https://npmcdn.com/flickity@2.0/dist/flickity.pkgd.min.js"></script>
+	<script src="script.js"></script>
+</body>
+</html>

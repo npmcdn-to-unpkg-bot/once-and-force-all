@@ -1,0 +1,238 @@
+article,aside,details,figcaption,figure,footer,header,hgroup,nav,section,summary{display:block;}audio,canvas,video{display:inline-block;}audio:not([controls]){display:none;height:0;}[hidden]{display:none;}html{font-family:sans-serif;-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%;}a:focus{outline:thin dotted;}a:active,a:hover{outline:0;}h1{font-size:2em;}abbr[title]{border-bottom:1px dotted;}b,strong{font-weight:700;}dfn{font-style:italic;}mark{background:#ff0;color:#000;}code,kbd,pre,samp{font-family:monospace, serif;font-size:1em;}pre{white-space:pre-wrap;word-wrap:break-word;}q{quotes:\201C \201D \2018 \2019;}small{font-size:80%;}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline;}sup{top:-.5em;}sub{bottom:-.25em;}img{border:0;}svg:not(:root){overflow:hidden;}fieldset{border:1px solid silver;margin:0 2px;padding:.35em .625em .75em;}button,input,select,textarea{font-family:inherit;font-size:100%;margin:0;}button,input{line-height:normal;}button,html input[type=button],/* 1 */
+input[type=reset],input[type=submit]{-webkit-appearance:button;cursor:pointer;}button[disabled],input[disabled]{cursor:default;}input[type=checkbox],input[type=radio]{box-sizing:border-box;padding:0;}input[type=search]{-webkit-appearance:textfield;-moz-box-sizing:content-box;-webkit-box-sizing:content-box;box-sizing:content-box;}input[type=search]::-webkit-search-cancel-button,input[type=search]::-webkit-search-decoration{-webkit-appearance:none;}textarea{overflow:auto;vertical-align:top;}table{border-collapse:collapse;border-spacing:0;}body,figure{margin:0;}legend,button::-moz-focus-inner,input::-moz-focus-inner{border:0;padding:0;}
+
+.clearfix:after {visibility: hidden; display: block; font-size: 0; content: " "; clear: both; height: 0; }
+
+*, *:before, *:after { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
+
+h1,h2,h3,h4,h5,h6 {
+	margin: 0;
+}
+
+footer{
+	width: 100%;
+	i {
+		color: blue;
+	}
+	p {
+		color: white;
+	}
+}
+
+body {
+	min-height: 100vh;
+	text-align: center;
+	background: linear-gradient(#FFC837, #FF8008);
+	background-repeat: no-repeat;
+	font-family: 'Atma', cursive;
+}
+
+h1 {
+	color: white;
+	font-weight: 700;
+	font-size: 6vw;
+	text-shadow: 0 1px 0 #ccc,
+	             0 2px 0 #c9c9c9,
+	             0 3px 0 #bbb,
+	             0 4px 0 #b9b9b9,
+	             0 5px 0 #aaa,
+	             0 6px 1px rgba(0,0,0,.1),
+	             0 0 5px rgba(0,0,0,.1),
+	             0 1px 3px rgba(0,0,0,.3),
+	             0 3px 5px rgba(0,0,0,.2),
+	             0 5px 10px rgba(0,0,0,.25),
+	             0 10px 10px rgba(0,0,0,.2),
+	             0 20px 20px rgba(0,0,0,.15);
+}
+
+h2 {
+	color: white;
+	font-size: 2.5vw;
+	margin-bottom: 10px;
+}
+
+fieldset {
+	border: none;
+}
+// commented the height out because it prevents the winner from overlapping onto the main area. not sure if this will cause other errors however.
+// main {
+// 	height: 100vh;
+// }
+
+.countdown {
+	text-align: center;
+	position: absolute;
+	left: 41vw;
+	z-index: 999;
+}
+
+.seconds {
+	font-size: 350px;
+	color:white;
+	text-shadow:5px 5px 0 rgba(0,0,0,0.05);
+	-webkit-transition:all 0.3s;
+}
+
+.battleType {
+	display: flex;
+	justify-content: space-between;
+	width: 50vw;
+	margin:0 auto;
+	margin-bottom: 20px;
+	input {
+		display: none;
+	}
+	label{
+		background-color: white;
+		cursor: pointer;
+		border-radius: 10px;
+		padding: 10px 20px 10px 20px;
+	}
+	label:hover {
+		cursor: pointer;
+	}
+	// When radio button is checked, select the label in front of it
+	input[type="radio"]:checked + label { 
+	background-color: #0066ff;
+	color: white;
+	}
+}
+
+.carousel {
+	width: 60vw;
+	max-width: 700px;
+	margin: 0 auto;
+	margin-bottom: 20px;
+	.flickity-slider {
+		overflow: visible;
+	}
+	.flickity-prev-next-button.previous {
+	  left: -40px;
+	}
+	.flickity-prev-next-button.next {
+	  right: -40px;
+	}
+	.flickity-prev-next-button .arrow {
+	  fill: white;
+	}
+	.flickity-prev-next-button {
+	  width: 30px;
+	  height: 30px;
+	  border-radius: 50%;
+	  background: #0066ff;
+	}
+	.carousel-cell {
+		margin: 0 10px;
+		img {
+			width: 30px;
+			opacity: .5;
+		}
+	}
+	.is-selected {
+		img {
+			width: 40px;
+			position: relative;
+			z-index: 99;
+			opacity: 1;
+			transition: width 0.4s ease;
+		}
+	}
+}
+
+.flickity-page-dots {
+	display: none;
+}
+
+.submitContainer {
+	input {
+		background-color: white;
+		border: none;
+		border-radius: 10px;
+		padding: 10px 20px;
+		margin-top: 20px;
+		margin-bottom: 20px;
+	}
+	input:hover {
+		background-color: #0066ff;
+		color: white;
+	}
+}
+.winnerVIEWPORT {
+	height: 100vh;
+	width: 100vw;
+	display: flex;
+	flex-direction: column;
+	.winner {
+	background-color: white;
+	margin: auto;
+	}
+}
+
+.winner {
+	// height: 60vh; I added this in JS so there isn't so much empty space at the bottom
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	position: relative;
+	h2 {
+		color: white;
+		font-size: 3em;
+	}
+	img{
+		width: 75px;
+		margin: auto;
+	} 
+	i {
+		display: block;
+		color: rgba(30, 131, 255, .4);
+		position: absolute;
+		bottom: 9vh;
+		font-size: 12em;
+	}
+}
+
+footer p {
+	margin: 0;
+}
+
+.characterSelect h2 {
+	font-size: 1.2em;
+}
+
+
+@media all and (max-width: 960px) {
+	.battleType {
+		width: 65vw;
+	}
+	.winnerVIEWPORT {
+		margin-top: 10vh;
+	}
+}
+
+@media all and (max-width: 750px) {
+	h1 {
+		font-size: 8vw;
+	}
+	h2 {
+		font-size: 3vw;
+		padding: 10px 20px;
+		padding-bottom: 0px;
+	}
+	.battleType {
+		width: 70vw;
+		flex-direction: column;
+		label {
+			margin: 5px 0px;
+		}
+	}
+	.countdown {
+		left: 39vw;
+		top: 20vw;
+	}
+}
+
+@media all and (max-width: 400px) {
+	.countdown {
+		left: 28vw; //probably unnecessary but might as well
+	}
+}
