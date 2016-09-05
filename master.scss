@@ -193,6 +193,10 @@ fieldset {
 
 footer p {
 	margin: 0;
+	a {
+		text-decoration: none;
+		color: #0066ff;
+	}
 }
 
 .characterSelect h2 {
@@ -231,8 +235,17 @@ footer p {
 	}
 }
 
-@media all and (max-width: 400px) {
+@media all and (max-width: 620px) {
+	.winner i {
+		bottom: 2vh;
+	}
+}
+
+@media all and (max-width: 350px) {
 	.countdown {
 		left: 28vw; //probably unnecessary but might as well
+	}
+	.winner i {
+		bottom: -4vh;
 	}
 }

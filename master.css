@@ -356,6 +356,11 @@ footer p {
   margin: 0;
 }
 
+footer p a {
+  text-decoration: none;
+  color: #0066ff;
+}
+
 .characterSelect h2 {
   font-size: 1.2em;
 }
@@ -391,8 +396,17 @@ footer p {
   }
 }
 
-@media all and (max-width: 400px) {
+@media all and (max-width: 620px) {
+  .winner i {
+    bottom: 2vh;
+  }
+}
+
+@media all and (max-width: 350px) {
   .countdown {
     left: 28vw;
+  }
+  .winner i {
+    bottom: -4vh;
   }
 }
